@@ -1,0 +1,364 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+Globalne style tekstu 
+*/
+body
+{
+	font-family: 'Lato', sans-serif;
+	line-height: 1.5;
+	background: #333333;	
+}
+p 
+{
+	margin-top: 6px;
+}
+h1
+{
+	font-size: 54px;
+	font-weight: 600;	
+	color:#33CCCC;
+	font-family: 'Russo One', sans-serif;
+}
+h2
+{
+	font-size: 36px;
+	margin-bottom: 48px;
+	text-transform: uppercase;
+	color:#33CCCC;
+	font-family: 'Russo One', sans-serif;
+}
+h3
+{
+	font-size: 27px;
+	color:#33CCCC;
+	font-family: 'Russo One', sans-serif;
+}
+label
+{
+	font-weight: 600;
+	color: #999999;
+}
+/* Kolumny, kontenery, sekcje */
+
+.intro-column, .col-half
+{
+	width: 100%;
+	float: none;
+}
+@media screen and (min-width: 600px)
+{
+	.intro-column
+	{
+		width: 31.4%;
+		float: left;
+		padding: 10px;
+	}
+	.col-half
+	{
+		width: 50%;
+		float: left;
+		position: relative;
+	}
+}
+section
+{
+	clear: both;
+	padding: 90px 0;
+	overflow: auto;
+}
+.container
+{
+	max-width: 1040px;
+	margin: 0 auto;
+
+	
+}
+/* formatowanie tekstu */
+.center-text
+{
+	text-align: center;
+}
+p
+{
+	text-align: center;
+}
+/*Przyciski*/
+.button
+{
+		padding: 8px 20px;
+		margin: 16px 0;
+		display: inline-block;
+		border: none;
+		border-radius: 5px;
+		color: black;
+		background:#33CCCC;
+}
+.button:hover
+{
+		color:#33CCCC;
+		background:#CC00CC;	
+}
+
+
+/*Style dla top (Nagłówek)*/
+.top
+{
+	height: 69px;
+	background: #222222;
+	-webkit-box-shadow: 7px 6px 300px 7px rgba(204,0,204,1);
+	-moz-box-shadow: 7px 6px 300px 7px rgba(204,0,204,1);
+	box-shadow: 7px 6px 300px 7px rgba(204,0,204,1);
+	position: relative;
+}
+.top a
+{
+	color: #999999;
+	text-decoration: none;
+}
+.logo
+{
+	float: left;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 68px;
+	font-family: 'Russo One', sans-serif;
+}
+.menu
+{
+	float: right;
+	
+}
+.menu li
+{
+	float: left;
+	line-height: 68px;
+	padding: 0 10px;
+	font-family: 'Russo One', sans-serif;
+}
+.menu li:hover
+{
+	background: black;
+	color: #CC00CC;
+	border-bottom:1px solid #33CCCC;
+	
+}
+.menu li:hover a
+{
+	color: #CC00CC;
+}
+/* style dla bannera*/
+.banner
+{
+	background: url("img/tlo.png") -100px -100px;
+	color: #999999;
+	padding: 220px 0;
+	height: 440px;
+}
+.banner h1
+{
+	margin-bottom: 30px;
+	
+}
+/*intro*/
+
+.intro img
+{
+	margin-bottom: 32px;
+	width: 320px; 
+	height: 213px;
+}
+.intro
+{
+	background:#333333;
+	color: #999999;
+}
+.portfolio
+{
+	background: #333333;	
+	color: #999999;
+}
+.portfolio img
+{
+	width: 480px;
+}
+.skills
+{
+	text-align: center;
+	background:#444444;
+}
+.promotion
+{
+	background:#444444;
+	color: #999999;
+}
+.promotion img
+{
+	width: 480px;
+	float: right;
+}
+.contact
+{
+	background: #333333;	
+	color: #999999;
+}
+.contact img
+{
+	width: 480px;
+}
+.contact input
+{
+	margin-bottom: 16px;
+	border-radius: 2px;
+	border: 2px solid;
+	color: #33CCCC;
+	padding: 8px;
+	width: 80%;
+	-webkit-box-shadow: 7px 5px 300px -8px rgba(204,0,204,1);
+	-moz-box-shadow: 7px 5px 300px -8px rgba(204,0,204,1);
+	box-shadow: 7px 5px 300px -8px rgba(204,0,204,1);
+}
+.contact .col-half
+{
+	margin-top: 16px;
+}
+.sociallinks
+{
+	background:#222222;
+	text-align: center;
+	padding: 0;
+}
+.site-footer
+{
+	background:#111111;	
+	color:#999999;
+	padding: 20px 0;
+}
+.li
+{
+	width: 25%;
+	height: 155px;
+	float: left;
+	
+}
+.li a
+{
+	color:#ffffff;
+	display: block;
+}
+.li:hover
+{
+	background:#0077B5;
+}
+.yt
+{
+	width: 25%;
+	height: 155px;
+	float: left;
+}
+.yt a 
+{
+	color:#ffffff;
+	display: block;
+}
+.yt:hover
+{
+	background-color:#d94348
+}
+.gplus
+{
+	width: 25%;
+	height: 155px;
+	float: left;
+}
+.gplus a
+{
+	color:#ffffff;
+	display: block;
+}
+.gplus:hover
+{
+	background-color:#d95333
+}
+.gh
+{
+	width: 25%;
+	height: 155px;
+	float: left;
+}
+.gh a 
+{
+	color:#ffffff;
+	display: block;
+}
+.gh:hover
+{
+	background-color:#000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
